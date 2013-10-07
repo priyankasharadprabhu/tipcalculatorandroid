@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 	public String calcTipFromBill(String billAmtStr, double tipPercent) {
 		double billAmt = Double.parseDouble(billAmtStr) ;
 		double tipAmt = billAmt * tipPercent / 100;
-		DecimalFormat curFormatter = new DecimalFormat("#.##");
+		DecimalFormat curFormatter = new DecimalFormat("#.00");
 	    String output = curFormatter.format(tipAmt);
 		return output;
 	}
